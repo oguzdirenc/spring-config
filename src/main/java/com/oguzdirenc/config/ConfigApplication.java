@@ -1,5 +1,6 @@
 package com.oguzdirenc.config;
 
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,6 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @SpringBootApplication
 @EnableConfigServer
+@EnableEncryptableProperties
 public class ConfigApplication {
 
 	public static void main(String[] args) {
